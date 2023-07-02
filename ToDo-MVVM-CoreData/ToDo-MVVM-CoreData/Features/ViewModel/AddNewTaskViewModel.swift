@@ -10,10 +10,12 @@ import Foundation
 class AddNewTaskViewModel {
     var name: String
     var dueDate: Date
+    var isUrgent: Bool
     
-    init(name: String, dueDate: Date) {
+    init(name: String, dueDate: Date, isUrgent: Bool) {
         self.name = name
         self.dueDate = dueDate
+        self.isUrgent = isUrgent
     }
     
     func saveTask(completion: @escaping (Bool) -> Void) {

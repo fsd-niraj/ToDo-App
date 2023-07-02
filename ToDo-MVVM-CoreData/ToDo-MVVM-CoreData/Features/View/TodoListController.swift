@@ -21,20 +21,7 @@ class TodoListController: UIViewController {
         tableView.estimatedRowHeight = 44
         tableView.rowHeight = UITableView.automaticDimension
         tableView.tableFooterView = UIView()
-//        mockData()
     }
-    
-//    func mockData() {
-//        let toDo = ToDo(context: CoreDataManager.shared.persistentContainer.viewContext)
-//        toDo.name = "Some name"
-//        toDo.dueOn = Date()
-//        toDo.completed = false
-//        toDo.id = UUID()
-//        for _ in 0...9 {
-//            mockToDo.append(toDo)
-//        }
-//
-//    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

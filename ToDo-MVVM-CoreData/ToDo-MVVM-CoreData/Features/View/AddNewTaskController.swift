@@ -20,7 +20,7 @@ class AddNewTaskController: UITableViewController {
     }
     
     @IBAction func saveNewTask(_ sender: UIBarButtonItem) {
-        let vm = AddNewTaskViewModel(name: taskName.text ?? "No Task", dueDate: taskDueOn.date)
+        let vm = AddNewTaskViewModel(name: taskName.text ?? "No Task", dueDate: taskDueOn.date, isUrgent: true)
         vm.saveTask { _ in
             DispatchQueue.main.async {
                 self.navigationController?.popViewController(animated: true)

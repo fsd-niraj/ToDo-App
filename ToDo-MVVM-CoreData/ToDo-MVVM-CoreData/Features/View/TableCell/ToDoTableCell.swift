@@ -12,6 +12,8 @@ class ToDoTableCell: UITableViewCell {
     @IBOutlet private weak var taskNameLabel: UILabel!
     @IBOutlet private weak var taskDueDate: UILabel!
     @IBOutlet private weak var taskCompletedDate: UILabel!
+    @IBAction func isUrgent(_ sender: UISwitch) {
+    }
     
     var todo: ToDo? {
         didSet {
